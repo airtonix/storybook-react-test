@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Toggle Plain 1`] = `
+<div
+  class="toggle"
+>
+  <button
+    class="button {this.state.class}"
+    onClick={[Function]}
+  >
+    ON
+  </button>
+  <span
+    class="toggle__label"
+  />
+</div>
+`;
+
+exports[`Storyshots Toggle with a label 1`] = `
+<div
+  class="toggle"
+>
+  <button
+    class="button {this.state.class}"
+    onClick={[Function]}
+  >
+    ON
+  </button>
+  <span
+    class="toggle__label"
+  >
+    Hello Toggle
+  </span>
+</div>
+`;
+
+exports[`Storyshots Toggle with custom state text 1`] = `
+<div
+  class="toggle"
+>
+  <button
+    class="button {this.state.class}"
+    onClick={[Function]}
+  >
+    Yes
+  </button>
+  <span
+    class="toggle__label"
+  >
+     Really?
+  </span>
+</div>
+`;
+
+exports[`Storyshots Toggle with some emoji 1`] = `
+<div
+  class="toggle"
+>
+  <button
+    class="button {this.state.class}"
+    onClick={[Function]}
+  >
+    ON
+  </button>
+  <span
+    class="toggle__label"
+  >
+    <span
+      aria-label="so cool"
+      role="img"
+    >
+      😀 😎 👍 💯
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Toggle with some emoji as state 1`] = `
+<div
+  class="toggle"
+>
+  <button
+    class="button {this.state.class}"
+    onClick={[Function]}
+  >
+    😀
+  </button>
+  <span
+    class="toggle__label"
+  />
+</div>
+`;
