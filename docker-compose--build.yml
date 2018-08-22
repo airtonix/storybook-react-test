@@ -1,0 +1,7 @@
+version: "2.0"
+
+services:
+
+  image:
+    build: .
+    image: airtonix/dev-${npm_package_name}:${npm_package_version}

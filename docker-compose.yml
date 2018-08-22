@@ -1,0 +1,21 @@
+version: "2.0"
+
+services:
+
+  image:
+    image: airtonix/dev-${npm_package_name}:${npm_package_version}
+
+  as_builder:
+    extends: {service: "image"}
+    volumes:
+      - "./:/app/"
+      - "/app/node_modules"
+
+  as_server:
+    extends: {service: "as_builder"}
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3000
+    ports:
+      - "3000:3000"
+      - "8081:8081"
