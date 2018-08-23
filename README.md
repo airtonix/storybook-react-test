@@ -22,7 +22,7 @@ src/
         component.js
 ```
 
-`component.js` was a simple react component.
+`component.js` is a basic react class component.
 
 ### Step two
 
@@ -36,6 +36,7 @@ src/
         component__story.js
 ```
 
+we install `jest` and `npm-run-all` (which you should seriously checkout).
 We add some entrypoint commands to `package.json`:
 
 ```json
@@ -46,6 +47,7 @@ We add some entrypoint commands to `package.json`:
     "prod": "build-storybook -c .storybook -o docs"
 ...
 ```
+Now `npm run dev` will (in parallel) run jest and storybook in watch mode.
 
 At this point, the project is ready for local development and netlify deployments.
 
