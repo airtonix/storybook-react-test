@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:test dev:storybook",
     "dev:test": "jest --watch",
-    "dev:storybook": "start-storybook -p 9001 -c .storybook",
+    "dev:storybook": "start-storybook -p 3000 -c .storybook",
     "prod": "build-storybook -c .storybook -o docs"
   }
 }
