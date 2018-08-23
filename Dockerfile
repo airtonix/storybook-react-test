@@ -24,8 +24,8 @@ RUN apk add --no-cache \
 RUN npm install -g node-gyp
 
 COPY ./package.json .
-COPY ./yarn.lock .
-RUN yarn install
+COPY ./package-lock.json .
+RUN npm ci
 
 
 FROM node:8.9.0-alpine
@@ -37,5 +37,5 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD [ "npm", "run", "container:start" ]
+
 
