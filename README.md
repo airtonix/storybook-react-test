@@ -13,7 +13,7 @@ I created this project to demonstrate to react users how easy it is to have:
 
 I started with the following:
 
-```
+```sh
 .babelrc
 package.json
 package-lock.json
@@ -28,7 +28,7 @@ src/
 
 Next we follow the Storybook getting started and create the configuration and test files:
 
-```
+```sh
 .storybook/
     config.js
 src/
@@ -38,7 +38,7 @@ src/
 
 We add some entrypoint commands to `package.json`:
 
-```
+```json
 ...
     "dev": "npm-run-all --parallel dev:test dev:storybook",
     "dev:test": "jest --watch",
